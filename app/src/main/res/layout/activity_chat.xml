@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ChatActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -13,11 +13,25 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/buttonOpenChat"
+        <TextView
+            android:id="@+id/textViewChatHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Открыть чат" />
+            android:hint="Введите сообщение" />
+
+        <Button
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отправить" />
     </LinearLayout>
 
 
